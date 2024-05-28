@@ -1,0 +1,10 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+/* one time css */
+
+.header-bottomarea {
+    margin-top: 30px;
+}
