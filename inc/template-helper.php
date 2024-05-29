@@ -133,7 +133,7 @@ function ampere_header_logo()
 { ?>
     <?php
     $ampere_logo_on = function_exists('tpmeta_field') ? tpmeta_field('ampere_en_secondary_logo') : '';
-    $ampere_logo = get_template_directory_uri() . '/assets/img/logo/logo-black.png';
+    $ampere_logo = get_template_directory_uri() . '/assets/img/logo.png';
     $ampere_logo_white = get_template_directory_uri() . '/assets/img/logo/logo.png';
 
     $ampere_site_logo = get_theme_mod('header_logo', $ampere_logo);
@@ -296,7 +296,7 @@ function ampere_header_menu()
         'menu_class'     => '',
         'container'      => '',
         'fallback_cb'    => 'ampere_Navwalker_Class::fallback',
-        // 'walker'         => new \TPCore\Widgets\ampere_Navwalker_Class,
+        'walker'         => new \TPCore\Widgets\ampere_Navwalker_Class,
     ]);
     ?>
     <?php
