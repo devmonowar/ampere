@@ -15,6 +15,7 @@ function ampere_scripts()
     if (is_rtl()) {
         wp_enqueue_style('bootstrap-rtl', FINBEST_THEME_CSS_DIR . 'bootstrap.rtl.min.css', array());
     } else {
+        wp_enqueue_style('bootstrap-3.3.7', FINBEST_THEME_CSS_DIR . 'bootstrap-3.3.7.min.css', array());
         wp_enqueue_style('bootstrap', FINBEST_THEME_CSS_DIR . 'bootstrap.min.css', array());
     }
     wp_enqueue_style('animate', FINBEST_THEME_CSS_DIR . 'animate.css', []);

@@ -119,7 +119,60 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
 </header>
 
 
-
+<!--main slider-->
+<section class="main-slider">
+    <div class="main-slider-carousel owl-carousel owl-theme">
+        <div class="slide" style="background-image:url(<?php print(get_template_directory_uri()); ?>/assets/img/banner-1.jpg)">
+            <div class="container">
+                <ul class="social-links d-none d-xl-block">
+                    <li><a class="fa fa-facebook" href="#"></a></li>
+                    <li><a class="fa fa-twitter" href="#"></a></li>
+                    <li><a class="fa fa-instagram" href="#"></a></li>
+                    <li><a class="fa fa-linkedin" href="#"></a></li>
+                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                </ul>
+                <div class="content">
+                    <h1>Welcome To<span>Ampere</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, nibh euismod Praesent interdum.</p>
+                    <div class="tp-btn"> <a href="contact-us.html" data-text="Contact Us" class="theme-button-one bttn color-one"><span>Contact Us</span></a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image:url(<?php print(get_template_directory_uri()); ?>/assets/img/banner-2.jpg)">
+            <div class="container">
+                <ul class="social-links d-none d-xl-block">
+                    <li><a class="fa fa-facebook" href="#"></a></li>
+                    <li><a class="fa fa-twitter" href="#"></a></li>
+                    <li><a class="fa fa-instagram" href="#"></a></li>
+                    <li><a class="fa fa-linkedin" href="#"></a></li>
+                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                </ul>
+                <div class="content">
+                    <h1>Welcome To<span>Ampere</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, nibh euismod Praesent interdum.</p>
+                    <div class="tp-btn"> <a href="contact-us.html" data-text="Contact Us" class="theme-button-one bttn color-one"><span>Contact Us</span></a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image:url(<?php print(get_template_directory_uri()); ?>/assets/img/banner-3.jpg)">
+            <div class="container">
+                <ul class="social-links d-none d-xl-block">
+                    <li><a class="fa fa-facebook" href="#"></a></li>
+                    <li><a class="fa fa-twitter" href="#"></a></li>
+                    <li><a class="fa fa-instagram" href="#"></a></li>
+                    <li><a class="fa fa-linkedin" href="#"></a></li>
+                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                </ul>
+                <div class="content">
+                    <h1>Welcome To<span>Ampere</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, nibh euismod Praesent interdum.</p>
+                    <div class="tp-btn"> <a href="contact-us.html" data-text="Contact Us" class="theme-button-one bttn color-one"><span>Contact Us</span></a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- main slider end -->
 
 <!-- Features Section Start -->
 <div class="features-wrapper">

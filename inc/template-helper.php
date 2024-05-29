@@ -296,7 +296,7 @@ function ampere_header_menu()
         'menu_class'     => '',
         'container'      => '',
         'fallback_cb'    => 'ampere_Navwalker_Class::fallback',
-        'walker'         => new \TPCore\Widgets\ampere_Navwalker_Class,
+        // 'walker'         => new \TPCore\Widgets\ampere_Navwalker_Class,
     ]);
     ?>
     <?php
