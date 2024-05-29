@@ -55,7 +55,7 @@ if (!class_exists('ampere_Navwalker_Class')) {
             }
             $indent = str_repeat($t, $depth);
             // Default class to add to the file.
-            $classes = ['in-dropdown', "tp-submenu"];
+            $classes = ['submenu', "tp-submenu"];
             /**
              * Filters the CSS class(es) applied to a menu list element.
              *

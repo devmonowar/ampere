@@ -66,34 +66,7 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
                 <!--// Header Logo -->
                 <!-- Main Navigation -->
                 <nav class="in-navigation">
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li class="in-dropdown"><a href="javascript:void(0)">Pages</a>
-                            <ul class="dropdown">
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="our-team.html">Our Team</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="testimonials.html">Testimonials</a></li>
-                                <li><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="in-dropdown"><a href="javascript:void(0)">Services</a>
-                            <ul>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="service-details.html">Service Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="in-dropdown"><a href="javascript:void(0)">Blog</a>
-                            <ul>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
-                    </ul>
-                    <?php // ampere_header_menu(); 
+                    <?php ampere_header_menu();
                     ?>
                 </nav>
                 <!--// Main Navigation -->
@@ -101,10 +74,11 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
                 <?php if (!empty($header_search_switch)) : ?>
                     <div class="header-search">
                         <button class="header-searchtrigger"><i class="fa fa-search"></i></button>
-                        <form class="header-searchbox" action="#">
-                            <input placeholder="Search..." type="text">
+                        <form class="header-searchbox" method="get" action="<?php print esc_url(home_url('/')); ?>">
+                            <input placeholder="<?php print esc_attr__('Search...', 'ampere'); ?>" name="s" value="<?php print esc_attr(get_search_query()) ?>" type="text">
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
+
                     </div>
                 <?php endif; ?>
                 <!--// Header Search -->
@@ -299,9 +273,6 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
     </div>
 </section>
 <!-- Pricing Wrapper End -->
-<div>
-    <h1>This is header one</h1>
-</div>
 
 
 
@@ -311,7 +282,8 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
             <div class="row align-items-center">
                 <div class="col-xl-3 col-6">
                     <div class="tp-header-logo-2 p-relative">
-                        <?php ampere_header_logo(); ?>
+                        <?php // ampere_header_logo(); 
+                        ?>
                     </div>
                 </div>
                 <div class="col-lg-6 d-none d-xl-block">
@@ -356,5 +328,7 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
         </div>
     </div>
 </header>
+
+
 <!-- header area end -->
 <?php get_template_part('template-parts/header/header-side-info'); ?>

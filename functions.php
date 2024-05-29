@@ -147,11 +147,11 @@ add_action('after_setup_theme', 'ampere_content_width', 0);
  * Enqueue scripts and styles.
  */
 
-define('FINBEST_THEME_DIR', get_template_directory());
-define('FINBEST_THEME_URI', get_template_directory_uri());
-define('FINBEST_THEME_CSS_DIR', FINBEST_THEME_URI . '/assets/css/');
-define('FINBEST_THEME_JS_DIR', FINBEST_THEME_URI . '/assets/js/');
-define('FINBEST_THEME_INC', FINBEST_THEME_DIR . '/inc/');
+define('AMPERE_THEME_DIR', get_template_directory());
+define('AMPERE_THEME_URI', get_template_directory_uri());
+define('AMPERE_THEME_CSS_DIR', AMPERE_THEME_URI . '/assets/css/');
+define('AMPERE_THEME_JS_DIR', AMPERE_THEME_URI . '/assets/js/');
+define('AMPERE_THEME_INC', AMPERE_THEME_DIR . '/inc/');
 
 
 
@@ -166,46 +166,46 @@ if (!function_exists('wp_body_open')) {
 /**
  * Implement the Custom Header feature.
  */
-require FINBEST_THEME_INC . 'custom-header.php';
+require AMPERE_THEME_INC . 'custom-header.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require FINBEST_THEME_INC . 'template-functions.php';
+require AMPERE_THEME_INC . 'template-functions.php';
 
 /**
  * Custom template helper function for this theme.
  */
-require FINBEST_THEME_INC . 'template-helper.php';
+require AMPERE_THEME_INC . 'template-helper.php';
 
 /**
  * initialize kirki customizer class.
  */
 if (class_exists('Kirki')) {
-    include_once FINBEST_THEME_INC . 'kirki-customizer.php';
+    include_once AMPERE_THEME_INC . 'kirki-customizer.php';
 }
 /**
  * Load Jetpack compatibility file.
  */
 if (defined('JETPACK__VERSION')) {
-    require FINBEST_THEME_INC . 'jetpack.php';
+    require AMPERE_THEME_INC . 'jetpack.php';
 }
 
 /**
  * include ampere functions file
  */
-require_once FINBEST_THEME_INC . 'class-navwalker.php';
-require_once FINBEST_THEME_INC . 'class-tgm-plugin-activation.php';
-require_once FINBEST_THEME_INC . 'add_plugin.php';
-require_once FINBEST_THEME_INC . '/common/ampere-breadcrumb.php';
-require_once FINBEST_THEME_INC . '/common/ampere-scripts.php';
-require_once FINBEST_THEME_INC . '/common/ampere-widgets.php';
+require_once AMPERE_THEME_INC . 'class-navwalker.php';
+require_once AMPERE_THEME_INC . 'class-tgm-plugin-activation.php';
+require_once AMPERE_THEME_INC . 'add_plugin.php';
+require_once AMPERE_THEME_INC . '/common/ampere-breadcrumb.php';
+require_once AMPERE_THEME_INC . '/common/ampere-scripts.php';
+require_once AMPERE_THEME_INC . '/common/ampere-widgets.php';
 if (function_exists('tpmeta_kick')) {
-    require_once FINBEST_THEME_INC . 'tp-metabox.php';
+    require_once AMPERE_THEME_INC . 'tp-metabox.php';
 }
 
 if (class_exists('WooCommerce')) {
-    require_once FINBEST_THEME_INC . '/woocommerce/tp-woocommerce.php';
+    require_once AMPERE_THEME_INC . '/woocommerce/tp-woocommerce.php';
 }
 
 /**

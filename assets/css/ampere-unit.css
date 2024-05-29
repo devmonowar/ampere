@@ -541,10 +541,10 @@ section {
 .in-navigation > ul > li:hover > a, .in-navigation > ul > li.active a {
 	color: #f26b31;
 }
-.in-navigation .in-dropdown {
+.in-navigation .menu-item-has-children {
 	position: relative;
 }
-.in-navigation .in-dropdown > a::after {
+.in-navigation .menu-item-has-children > a::after {
 	content: "\f107";
 	font-family: "FontAwesome";
 	padding-left: 10px;
@@ -552,7 +552,7 @@ section {
 	font-size: 15px;
 	vertical-align: bottom;
 }
-.in-navigation .in-dropdown ul {
+.in-navigation .menu-item-has-children ul {
 	position: absolute;
 	left: 100%;
 	right: auto;
@@ -570,45 +570,45 @@ section {
 	visibility: hidden;
 	opacity: 0;
 }
-.in-navigation .in-dropdown ul li {
+.in-navigation .menu-item-has-children ul li {
 	position: relative;
 }
-.in-navigation .in-dropdown ul li a {
+.in-navigation .menu-item-has-children ul li a {
 	display: block;
 	padding: 9px 15px;
 	color: #fff;
 	font-size: 14px;
 	font-family: 'Poppins', sans-serif;
 }
-.in-navigation .in-dropdown ul li:not(:last-child) a {
+.in-navigation .menu-item-has-children ul li:not(:last-child) a {
 	border-bottom: 1px solid #464646;
 }
-.in-navigation .in-dropdown ul li:hover > a {
+.in-navigation .menu-item-has-children ul li:hover > a {
 	color: #ffffff;
 	background: #f26b31;
 	border-color: #f26b31;
 }
-.in-navigation .in-dropdown ul li:hover > ul {
+.in-navigation .menu-item-has-children ul li:hover > ul {
 	transform: translateX(0);
 	visibility: visible;
 	opacity: 1;
 }
-.in-navigation .in-dropdown > ul {
+.in-navigation .menu-item-has-children > ul {
 	left: 0;
 	top: 100%;
 	transform: translateY(20px);
 }
-.in-navigation .in-dropdown:hover > ul {
+.in-navigation .menu-item-has-children:hover > ul {
 	transform: translateY(0);
 	visibility: visible;
 	opacity: 1;
 }
-.in-navigation .in-dropdown.overflow-element ul {
+.in-navigation .menu-item-has-children.overflow-element ul {
 	left: auto;
 	right: 100%;
 	transform: translateX(-20px);
 }
-.in-navigation .in-dropdown.overflow-element > ul {
+.in-navigation .menu-item-has-children.overflow-element > ul {
 	left: auto;
 	right: 0;
 }

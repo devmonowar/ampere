@@ -133,7 +133,7 @@ function ampere_header_logo()
 { ?>
     <?php
     $ampere_logo_on = function_exists('tpmeta_field') ? tpmeta_field('ampere_en_secondary_logo') : '';
-    $ampere_logo = get_template_directory_uri() . '/assets/img/logo.png';
+    $ampere_logo = get_template_directory_uri() . '/assets/img/logo/logo-black.png';
     $ampere_logo_white = get_template_directory_uri() . '/assets/img/logo/logo.png';
 
     $ampere_site_logo = get_theme_mod('header_logo', $ampere_logo);
@@ -152,12 +152,11 @@ function ampere_header_logo()
 <?php
 }
 
-
 // header logo
 function ampere_header_black_logo()
 { ?>
     <?php
-    $ampere_logo = get_template_directory_uri() . '/assets/img/logo/logo-black.png';
+    $ampere_logo = get_template_directory_uri() . '/assets/img/logo.png';
 
     $ampere_black_logo = get_theme_mod('header_logo', $ampere_logo);
     ?>
@@ -462,7 +461,7 @@ function ampere_custom_color()
     $ampere_gra_color_2 = get_theme_mod('ampere_gra_color_2', '#00ACCC');
     $ampere_body = get_theme_mod('ampere_body', '#333F4D');
 
-    wp_enqueue_style('ampere-custom', FINBEST_THEME_CSS_DIR . 'ampere-custom.css', []);
+    wp_enqueue_style('ampere-custom', AMPERE_THEME_CSS_DIR . 'ampere-custom.css', []);
 
     if (!empty($ampere_color_1 || $ampere_color_2 || $ampere_color_3 || $ampere_color_4)) {
         $custom_css = '';

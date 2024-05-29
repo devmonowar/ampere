@@ -79,6 +79,47 @@ function ampere_breadcrumb_func()
 
 ?>
 
+
+
+        <!-- Breadcrumb Wrapper -->
+        <div class="breadcrumb-wrapper">
+            <div class="images-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-heading">
+                            <?php echo ampere_kses($title);
+                            var_dump($title);
+
+                            ?>
+                            <span class="line"></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="page-breadcrumb-inner">
+                            <div class="page-breadcrumb">
+
+                                <?php if (function_exists('bcn_display')) : ?>
+                                    <div class="breadcrumb-list">
+                                        <?php bcn_display(); ?>
+                                    </div>
+                                <?php endif; ?>
+
+
+
+                                <!-- <div class="breadcrumb-list">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- about breadcrumb area start -->
         <section class="breadcrumb__area pt-165 pb-150 p-relative z-index-1 fix" data-bg-color="<?php echo esc_attr($breadcrumb_bg_color); ?>">
             <div class="breadcrumb__bg" data-background="<?php print esc_attr($bg_main_img); ?>"></div>
@@ -103,55 +144,8 @@ function ampere_breadcrumb_func()
         </section>
         <!-- about breadcrumb area end -->
 
-    <?php
+<?php
     }
 }
 
 add_action('ampere_before_main_content', 'ampere_breadcrumb_func');
-
-// ampere_search_form
-function ampere_search_form()
-{
-    ?>
-    <!-- search area start -->
-    <div class="search-area">
-        <div class="search-inner p-relative">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="search-wrapper">
-                            <div class="search-close">
-                                <button class="search-close-btn">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="search-content pt-35">
-                                <h3 class="heading text-center mb-30"><?php echo esc_html__("Hi! How can we help You?", "ampere") ?></h3>
-                                <div class="d-flex justify-content-center px-5">
-                                    <div class="search w-100 p-relative">
-                                        <form method="get" action="<?php print esc_url(home_url('/')); ?>">
-                                            <input type="text" name="s" class="search-input" value="<?php print esc_attr(get_search_query()) ?>" placeholder="<?php print esc_attr__('Search...', 'ampere'); ?>">
-                                            <button class="search-icon">
-                                                <i class="fa fa-search"></i>
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="search-overlay"></div>
-    <!-- search area end -->
-
-
-
-<?php
-}
-add_action('ampere_before_main_content', 'ampere_search_form');
