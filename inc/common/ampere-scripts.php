@@ -24,7 +24,7 @@ function ampere_scripts()
     wp_enqueue_style('et-line', AMPERE_THEME_CSS_DIR . 'et-line.css', []);
     wp_enqueue_style('magnific-popup', AMPERE_THEME_CSS_DIR . 'magnific-popup.css', []);
     wp_enqueue_style('font-awesome', AMPERE_THEME_CSS_DIR . 'font-awesome.min.css', []);
-    wp_enqueue_style('owl', AMPERE_THEME_CSS_DIR . 'mainmenu.css', []);
+    wp_enqueue_style('mainmenu', AMPERE_THEME_CSS_DIR . 'mainmenu.css', []);
     wp_enqueue_style('owl', AMPERE_THEME_CSS_DIR . 'owl.css', []);
     // wp_enqueue_style('ampere-core', AMPERE_THEME_CSS_DIR . 'ampere-core.css', [], time());
     wp_enqueue_style('ampere-unit', AMPERE_THEME_CSS_DIR . 'ampere-unit.css', [], time());
@@ -64,7 +64,7 @@ function ampere_fonts_url()
     by chosen font(s), translate this to 'off'. Do not translate into your own language.
      */
     if ('off' !== _x('on', 'Google font: on or off', 'ampere')) {
-        $font_url = 'https://fonts.googleapis.com/css2?' . urlencode('family=Jost:wght@400;500;600;700;800;900&family=Kumbh+Sans:wght@400;500;600;700;800&display=swap');
+        $font_url = 'https://fonts.googleapis.com/css2?' . urlencode('family=Poppins:wght@300;400;500;600;700;&family=Kumbh+Sans:wght@400;500;600;700;800&display=swap');
     }
     return $font_url;
 }

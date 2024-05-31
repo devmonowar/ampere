@@ -46,13 +46,12 @@ function ampere_widgets_init()
             'name'          => sprintf(esc_html__('Footer %1$s', 'ampere'), $num),
             'id'            => 'footer-' . $num,
             'description'   => sprintf(esc_html__('Footer Column %1$s', 'ampere'), $num),
-            'before_widget' => '<div id="%1$s" class="tp-footer-widget tp-footer-2-col-' . $num . ' mb-50 %2$s"> <div class="tp-footer-widget-content">',
+            'before_widget' => '<div id="%1$s" class="widget footer-widget tp-footer-' . $num . ' %2$s"> <div class="tp-footer-widget-content">',
             'after_widget'  => '</div></div>',
-            'before_title'  => '<h3 class="tp-footer-widget-title">',
+            'before_title'  => '<h3 class="widget-title">',
             'after_title'   => '</h3>',
         ]);
     }
-
     // footer 2
     if ($footer_style_2_switch) {
         for ($num = 1; $num <= $footer_widgets; $num++) {
@@ -61,7 +60,7 @@ function ampere_widgets_init()
                 'name'          => sprintf(esc_html__('Footer Style 2 : %1$s', 'ampere'), $num),
                 'id'            => 'footer-2-' . $num,
                 'description'   => sprintf(esc_html__('Footer Style 2 : %1$s', 'ampere'), $num),
-                'before_widget' => '<div id="%1$s" class="tp-footer-widget tp-footer-col-' . $num . ' mb-50 %2$s"> <div class="tp-footer-widget-content">',
+                'before_widget' => '<div id="%1$s" class="tp-footer-widget tp-footer-' . $num . ' %2$s"> <div class="tp-footer-widget-content">',
                 'after_widget'  => '</div></div>',
                 'before_title'  => '<h3 class="tp-footer-widget-title">',
                 'after_title'   => '</h3>',
@@ -77,7 +76,7 @@ function ampere_widgets_init()
                 'name'          => sprintf(esc_html__('Footer Style 3 : %1$s', 'ampere'), $num),
                 'id'            => 'footer-3-' . $num,
                 'description'   => sprintf(esc_html__('Footer Style 3 : %1$s', 'ampere'), $num),
-                'before_widget' => '<div id="%1$s" class="tp-footer-widget tp-footer-3-col-' . $num . ' mb-50 %2$s"> <div class="tp-footer-widget-content">',
+                'before_widget' => '<div id="%1$s" class="tp-footer-widget tp-footer-' . $num . ' %2$s"> <div class="tp-footer-widget-content">',
                 'after_widget'  => '</div></div>',
                 'before_title'  => '<h3 class="tp-footer-widget-title">',
                 'after_title'   => '</h3>',

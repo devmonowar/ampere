@@ -78,14 +78,23 @@ switch ($footer_columns) {
 }
 
 ?>
-<!-- footer area start -->
-<footer class="tp-footer-area-2 p-relative z-index-1" data-bg-color="#16243E">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Wrapper Start -->
+<footer>
     <?php if (is_active_sidebar('footer-1') or is_active_sidebar('footer-2') or is_active_sidebar('footer-3') or is_active_sidebar('footer-4')) : ?>
-        <div class="tp-footer-bg-shape-2">
-            <img class="shape-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/home-2/shape-1.png" alt="">
-            <img class="shape-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/home-2/shape-2.png" alt="">
-        </div>
-        <div class="tp-footer-main-area tp-footer-border pt-110">
+        <div class="footer-top">
             <div class="container">
                 <div class="row">
                     <?php
@@ -119,22 +128,17 @@ switch ($footer_columns) {
                 </div>
             </div>
         </div>
+
     <?php endif; ?>
-    <div class="tp-footer-copyright-area p-relative ">
+    <!-- Footer Wrapper End -->
+    <div class="copyright">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-6">
-                    <div class="tp-footer-copyright-inner">
-                        <p><?php print ampere_copyright_text(); ?></p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-6">
-                    <div class="tp-footer-copyright-inner text-lg-end">
-                        <?php echo ampere_kses($footer_bottom_menu); ?>
-                    </div>
+                <div class="col-lg-12 text-center">
+                    <p><?php print ampere_copyright_text(); ?></p>
                 </div>
             </div>
         </div>
     </div>
+
 </footer>
-<!-- footer area end -->

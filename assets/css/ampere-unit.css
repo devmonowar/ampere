@@ -35,7 +35,7 @@
 1. Fonts - Roboto and Poppins
 ================================================
 */
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:400,500,700");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:400,500,700");
 
 @import url('../css/font-awesome.min.css');
 @import url('../css/meanmenu.css');
@@ -43,7 +43,7 @@
 @import url('../css/owl.css');
 @import url('../css/magnific-popup.css');
 @import url('../css/et-line.css');
-@import url('../css/bicon.min.css');
+@import url('../css/bicon.min.css'); */
 /*
 ================================================
 2. Common CSS
@@ -2620,18 +2620,18 @@ img.mfp-img {
 .social-icon a.be:hover{
     background: #0071b9
 }
-.nav-widget ul{
+.footer-widget ul{
     margin: 0 0 0;
     padding: 0 0 0 22%;
     list-style: none;
 }
-.nav-widget ul li {
+.footer-widget ul li {
 	padding:0 0 7px;
 }
-.nav-widget ul li a{
+.footer-widget ul li a{
     color: #fff;
 }
-.nav-widget ul li a:hover {
+.footer-widget ul li a:hover {
 	color:#f26b31;
 }
 .newslatter-widget{
@@ -2792,8 +2792,8 @@ img.mfp-img {
 	line-height: 35px;
 	margin-right: 3px;
 }
-.nav-widget ul {
-	padding: 0 0 0 17%;
+.footer-widget ul {
+	padding: 0 0 0 10%;
 }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2915,7 +2915,7 @@ top: -85px !important;
 	line-height: 37px;
 	margin-right: 0;
 }
-.nav-widget ul {
+.footer-widget ul {
 	padding: 0 0 0 10%;
 }
 }
@@ -3060,7 +3060,7 @@ top: -85px !important;
 .widget {
 	padding:35px 0 0;
 }
-.nav-widget ul{
+.footer-widget ul{
     padding: 0;
 }
 .social-icon a {
