@@ -8,6 +8,7 @@
  * @package ampere
  */
 
+
 if (!function_exists('ampere_setup')) :
     /**
      * Sets up theme defaults and registers support for various WordPress features.
@@ -19,7 +20,7 @@ if (!function_exists('ampere_setup')) :
     function ampere_setup()
     {
         /*
-         * Make theme available for translation.
+         * Make the theme available for translation.
          * Translations can be filed in the /languages/ directory.
          * If you're building a theme based on ampere, use a find and replace
          * to change 'ampere' to the name of your theme in all the template files.
