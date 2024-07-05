@@ -8,7 +8,7 @@
  * @package ampere
  */
 
-$ampere_blog_btn = get_theme_mod('ampere_blog_btn', 'Read More');
+$ampere_blog_btn = get_theme_mod('ampere_blog_btn', __('Read More', 'ampere')); 
 $ampere_blog_btn_switch = get_theme_mod('ampere_blog_btn_switch', true);
 
 ?>

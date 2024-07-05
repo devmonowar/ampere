@@ -19,11 +19,12 @@ $blog_column = is_active_sidebar('blog-sidebar') ? 8 : 12;
 ?>
 
 
-<section class="tp-postbox-area pt-120 pb-120">
+
+<section class="tp-postbox-area inner-page-wrapper blog-wrapper">
 	<div class="container">
 		<div class="row">
 			<div class="col-xxl-<?php print esc_attr($blog_column); ?> col-xl-<?php print esc_attr($blog_column); ?> col-lg-<?php print esc_attr($blog_column); ?> blog-post-items blog-padding">
-				<div class="tp-postbox-wrapper">
+				<div class="row">
 					<?php
 					if (have_posts()) :
 						if (is_home() && !is_front_page()) :

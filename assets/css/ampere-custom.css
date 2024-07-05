@@ -11,3 +11,8 @@
 section#shadow-host-companion {
     padding: 0;
 }
+.footer-top {
+    background: cadetblue;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}

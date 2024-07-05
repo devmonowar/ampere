@@ -734,8 +734,8 @@ function footer_layout_section()
             'priority'    => 10,
             'choices'     => [
                 'footer_1'   => get_template_directory_uri() . '/inc/img/footer/footer-1.png',
-                'footer_2' => get_template_directory_uri() . '/inc/img/footer/footer-2.png',
-                'footer_3' => get_template_directory_uri() . '/inc/img/footer/footer-3.png',
+                'footer_2' => get_template_directory_uri() . '/inc/img/footer/footer-1.png',
+                'footer_3' => get_template_directory_uri() . '/inc/img/footer/footer-1.png',
             ],
             'default'     => 'footer_1',
         ]
@@ -752,14 +752,6 @@ function footer_layout_section()
     );
 
     // footer_layout_section section 
-    new \Kirki\Field\Image(
-        [
-            'settings'    => 'footer_logo_image',
-            'label'       => esc_html__('Footer Logo Image', 'ampere'),
-            'description' => esc_html__('Footer Logo add/remove', 'ampere'),
-            'section'     => 'footer_layout_section',
-        ]
-    );
 
     new \Kirki\Field\Color(
         [
@@ -785,29 +777,6 @@ function footer_layout_section()
         ]
     );
 
-    new \Kirki\Field\Checkbox_Switch(
-        [
-            'settings'    => 'footer_layout_3_switch',
-            'label'       => esc_html__('Footer Style 3 Switch', 'ampere'),
-            'description' => esc_html__('Footer Style 3 On/Off', 'ampere'),
-            'section'     => 'footer_layout_section',
-            'default'     => 'off',
-            'choices'     => [
-                'on'  => esc_html__('Enable', 'ampere'),
-                'off' => esc_html__('Disable', 'ampere'),
-            ],
-        ]
-    );
-
-    new \Kirki\Field\Checkbox_Switch(
-        [
-            'settings'    => 'footer_copyright_switch',
-            'label'       => esc_html__('Footer Copyright On/Off', 'ampere'),
-            'section'     => 'footer_layout_section',
-            'default'     => true,
-            'priority' => 10,
-        ]
-    );
 
     new \Kirki\Field\Text(
         [
@@ -815,66 +784,6 @@ function footer_layout_section()
             'label'    => esc_html__('Footer Copyright', 'ampere'),
             'section'  => 'footer_layout_section',
             'default'  => esc_html__('Copyright &copy; 2023 Theme_Pure. All Rights Reserved', 'ampere'),
-            'priority' => 10,
-        ]
-    );
-
-
-    new \Kirki\Field\Checkbox_Switch(
-        [
-            'settings'    => 'footer_social_switch',
-            'label'       => esc_html__('Footer Social On / Off', 'ampere'),
-            'section'     => 'footer_layout_section',
-            'default'     => false,
-            'priority' => 10,
-        ]
-    );
-
-
-    new \Kirki\Field\Checkbox_Switch(
-        [
-            'settings'    => 'footer_bottom_copyright_area_switch',
-            'label'       => esc_html__('Footer Bottom  Copyright Area On/Off', 'ampere'),
-            'section'     => 'footer_layout_section',
-            'default'     => true,
-            'priority' => 10,
-        ]
-    );
-    new \Kirki\Field\textarea(
-        [
-            'settings'    => 'footer_bottom_menu',
-            'label'       => esc_html__('Footer Bottom Menu', 'ampere'),
-            'section'     => 'footer_layout_section',
-            'default'     => esc_html__('Footer Bottom menu', 'ampere'),
-            'priority' => 10,
-        ]
-    );
-    new \Kirki\Field\Checkbox_Switch(
-        [
-            'settings'    => 'footer_cta_switch',
-            'label'       => esc_html__('Footer Cta On / Off', 'ampere'),
-            'section'     => 'footer_layout_section',
-            'default'     => false,
-            'priority' => 10,
-        ]
-    );
-
-    new \Kirki\Field\text(
-        [
-            'settings'    => 'footer_top_cta_title',
-            'label'       => esc_html__('Footer Top Cta Title', 'ampere'),
-            'section'     => 'footer_layout_section',
-            'default'     => esc_html__('Footer Top Cta Title', 'ampere'),
-            'priority' => 10,
-        ]
-    );
-
-    new \Kirki\Field\textarea(
-        [
-            'settings'    => 'footer_top_cta',
-            'label'       => esc_html__('Footer Top Cta', 'ampere'),
-            'section'     => 'footer_layout_section',
-            'default'     => esc_html__('Footer Top Cta', 'ampere'),
             'priority' => 10,
         ]
     );
