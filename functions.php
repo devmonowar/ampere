@@ -313,7 +313,6 @@ if (!function_exists('ampere_search_filter_form')) {
             esc_attr(get_search_query()),
             esc_html__('Search', 'ampere')
         );
-
         return $form;
     }
     add_filter('get_search_form', 'ampere_search_filter_form');
