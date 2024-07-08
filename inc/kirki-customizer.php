@@ -29,6 +29,7 @@ function header_top_section()
         [
             'settings'    => 'header_layout_custom',
             'label'       => esc_html__('Chose Header Style', 'ampere'),
+            'description' => esc_html__('Header Style 2 and 3 will be done later', 'ampere'),
             'section'     => 'header_top_section',
             'priority'    => 10,
             'choices'     => [
