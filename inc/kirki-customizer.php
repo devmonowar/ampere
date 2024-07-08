@@ -768,7 +768,7 @@ function footer_layout_section()
         [
             'settings'    => 'footer_layout_2_switch',
             'label'       => esc_html__('Footer Style 2 Switch', 'ampere'),
-            'description' => esc_html__('Footer Style 2 On/Off', 'ampere'),
+            'description' => esc_html__('Footer Style 2 and 3 will be done later', 'ampere'),
             'section'     => 'footer_layout_section',
             'default'     => 'off',
             'choices'     => [
