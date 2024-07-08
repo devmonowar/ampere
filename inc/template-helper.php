@@ -14,12 +14,6 @@ function get_header_style($style)
         get_template_part('template-parts/header/header-2');
     } elseif ($style == 'header_3') {
         get_template_part('template-parts/header/header-3');
-    } elseif ($style == 'header_1_onepage') {
-        get_template_part('template-parts/header/header-1-onepage');
-    } elseif ($style == 'header_2_onepage') {
-        get_template_part('template-parts/header/header-2-onepage');
-    } elseif ($style == 'header_3_onepage') {
-        get_template_part('template-parts/header/header-3-onepage');
     } else {
         get_template_part('template-parts/header/header-1');
     }
@@ -330,8 +324,6 @@ function get_footer_style($style)
         get_template_part('template-parts/footer/footer-2');
     } elseif ($style == 'footer_3') {
         get_template_part('template-parts/footer/footer-3');
-    } elseif ($style == 'footer_4') {
-        get_template_part('template-parts/footer/footer-4');
     } else {
         get_template_part('template-parts/footer/footer-1');
     }

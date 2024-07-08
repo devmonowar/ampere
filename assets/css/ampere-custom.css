@@ -16,3 +16,9 @@ section#shadow-host-companion {
     background-size: cover !important;
     background-repeat: no-repeat !important;
 }
+
+@media (max-width: 767px) {
+    .standard-logo {
+        padding: 30px 0;
+    }
+}
