@@ -192,6 +192,7 @@ if (defined('JETPACK__VERSION')) {
     require AMPERE_THEME_INC . 'jetpack.php';
 }
 
+
 /**
  * include ampere functions file
  */

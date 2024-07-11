@@ -94,7 +94,7 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
 
 
 <!--main slider-->
-<section class="main-slider">
+<!-- <section class="main-slider">
     <div class="main-slider-carousel owl-carousel owl-theme">
         <div class="slide" style="background-image:url(<?php print(get_template_directory_uri()); ?>/assets/img/banner-1.jpg)">
             <div class="container">
@@ -145,11 +145,11 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- main slider end -->
 
 <!-- Features Section Start -->
-<div class="features-wrapper">
+<!-- <div class="features-wrapper">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4 no-padding">
@@ -181,12 +181,12 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Features Section End -->
 <!-- Banner Wrapper End -->
 
 <!-- Pricing Wrapper Start -->
-<section class="pricing-wrapper">
+<!-- <section class="pricing-wrapper">
     <div class="container">
         <div class="section_heading">
             <h2>Our <span>Pricing</span></h2>
@@ -271,7 +271,7 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Pricing Wrapper End -->
 
 
