@@ -24,7 +24,7 @@ $blog_column = is_active_sidebar('blog-sidebar') ? 8 : 12;
 	<div class="container">
 		<div class="row">
 			<div class="col-xxl-<?php print esc_attr($blog_column); ?> col-xl-<?php print esc_attr($blog_column); ?> col-lg-<?php print esc_attr($blog_column); ?> blog-post-items blog-padding">
-				<div class="row another_class">
+				<div class="another_class">
 					<?php
 					if (have_posts()) :
 						if (is_home() && !is_front_page()) :
@@ -44,6 +44,7 @@ $blog_column = is_active_sidebar('blog-sidebar') ? 8 : 12;
 							* called content-___.php (where ___ is the Post Type name) and that will be used instead.
 							*/
 							get_template_part('template-parts/content', get_post_format()); ?>
+
 						<?php
 						endwhile;
 						?>
