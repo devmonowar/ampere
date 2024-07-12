@@ -19,7 +19,7 @@ $ampere_blog_cat = get_theme_mod('ampere_blog_cat', false);
     <?php if (!empty($ampere_blog_author)) : ?>
         <span>
             <a href="<?php print esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
-                <i class="fa-regular fa-user"></i>
+                <i class="fa fa-user"></i>
                 <?php print get_the_author(); ?>
             </a>
         </span>
@@ -27,7 +27,7 @@ $ampere_blog_cat = get_theme_mod('ampere_blog_cat', false);
 
     <?php if (!empty($ampere_blog_cat)) : ?>
         <?php if (!empty($categories[0]->name)) : ?>
-            <span> <a href="<?php print esc_url(get_category_link($categories[0]->term_id)); ?>"> <i class="fa-regular fa-folder-open"></i>
+            <span> <a href="<?php print esc_url(get_category_link($categories[0]->term_id)); ?>"> <i class="fa fa-folder-open"></i>
                     <?php echo esc_html($categories[0]->name); ?>
                 </a>
             </span>
@@ -36,7 +36,7 @@ $ampere_blog_cat = get_theme_mod('ampere_blog_cat', false);
 
     <?php if (!empty($ampere_blog_date)) : ?>
         <span>
-            <i class="fa-sharp fa-regular fa-calendar-days"></i>
+            <i class="fa fa-calendar-days"></i>
             <?php the_time(get_option('date_format')); ?>
         </span>
     <?php endif; ?>
@@ -44,7 +44,7 @@ $ampere_blog_cat = get_theme_mod('ampere_blog_cat', false);
     <?php if (!empty($ampere_blog_comments)) : ?>
         <span>
             <a href="<?php comments_link(); ?>">
-                <i class="fa-regular fa-comments"></i>
+                <i class="fa fa-comments"></i>
                 <?php comments_number(); ?>
             </a>
         </span>

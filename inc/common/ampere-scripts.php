@@ -28,7 +28,7 @@ function ampere_scripts()
     wp_enqueue_style('owl', AMPERE_THEME_CSS_DIR . 'owl.css', []);
     // wp_enqueue_style('ampere-core', AMPERE_THEME_CSS_DIR . 'ampere-core.css', [], time());
     wp_enqueue_style('ampere-unit', AMPERE_THEME_CSS_DIR . 'ampere-unit.css', [], time());
-    wp_enqueue_style('ampere-custom', AMPERE_THEME_CSS_DIR . 'ampere-custom.css', []);
+    wp_enqueue_style('ampere-new-custom', AMPERE_THEME_CSS_DIR . 'ampere-new-custom.css', []);
     wp_enqueue_style('ampere-style', get_stylesheet_uri());
 
 

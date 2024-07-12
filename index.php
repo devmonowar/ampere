@@ -48,9 +48,32 @@ $blog_column = is_active_sidebar('blog-sidebar') ? 8 : 12;
 						<?php
 						endwhile;
 						?>
-						<div class="tp-postbox-pagination">
-							<?php ampere_pagination('<i class="fa-regular fa-arrow-left"></i>', '<i class="fa-regular fa-arrow-right"></i>', '', ['class' => '']); ?>
+						<div class="basic-pagination">
+							<?php ampere_pagination('<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>', '', ['class' => '']); ?>
 						</div>
+
+
+						<!-- <div class="basic-pagination">
+							<nav>
+								<ul>
+									<li class="active">
+										<a href="blog.html">1</a>
+									</li>
+									<li>
+										<a href="blog.html">2</a>
+									</li>
+									<li>
+										<a href="blog.html">3</a>
+									</li>
+									<li>
+										<a href="blog.html">
+											<span class="current"><i class="fa-regular fa-arrow-right"></i></span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div> -->
+
 					<?php
 					else :
 						get_template_part('template-parts/content', 'none');
