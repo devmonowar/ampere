@@ -42,7 +42,6 @@ function ampere_scripts()
     wp_enqueue_script('plugins', AMPERE_THEME_JS_DIR . 'plugins.js', ['jquery'], false, true);
     wp_enqueue_script('popper', AMPERE_THEME_JS_DIR . 'popper.min.js', ['jquery'], false, true);
     wp_enqueue_script('wow', AMPERE_THEME_JS_DIR . 'wow.js', ['jquery'], false, true);
-
     wp_enqueue_script('ampere-main', AMPERE_THEME_JS_DIR . 'main.js', ['jquery'], false, true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
