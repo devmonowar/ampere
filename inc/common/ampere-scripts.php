@@ -50,7 +50,6 @@ function ampere_scripts()
 }
 add_action('wp_enqueue_scripts', 'ampere_scripts');
 
-
 /*
 Register Fonts
  */
