@@ -12,7 +12,6 @@ $ampere_error_title = get_theme_mod('ampere_error_title', __("Sorry We Can't Fin
 $ampere_error_text = get_theme_mod('ampere_error_text', __("Oops! The page you are looking for does not exist. It might have been moved or deleted. ", 'ampere'));
 $ampere_error_link_text = get_theme_mod('ampere_error_link_text', __('Back To Home', 'ampere'));
 
-
 get_header();
 ?>
 <div class="tp-error__area pt-120 pb-120">

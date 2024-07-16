@@ -1,0 +1,99 @@
+/* body {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+} */
+/* one time css */
+
+.admin-bar .header-bottomarea {
+    margin-top: 30px;
+}
+section#shadow-host-companion {
+    padding: 0;
+}
+.footer-top {
+    background: cadetblue;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+/* blog css */
+.blog-wrapper .blog_card {
+    margin: 0px 0 60px;
+}
+.blog-wrapper .item .post-img {
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .standard-logo {
+        padding: 30px 0;
+    }
+}
+
+
+/* basic-pagination */
+.basic-pagination {
+    margin-bottom: 40px;
+  }
+  .basic-pagination ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  @media (max-width: 767px) {
+    .basic-pagination ul li {
+      margin-right: 5px;
+    }
+  }
+  .basic-pagination ul li:hover a {
+    color: #fff;
+    background-color: #16171a;
+  }
+  .basic-pagination ul li:hover .current {
+    background-color: #16171a;
+    color: #fff;
+  }
+  .basic-pagination ul li.active a {
+    color: #fff;
+    background-color: #16171a;
+  }
+  .basic-pagination ul li > a {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #16171a;
+    background-color: #f5f5f8;
+    transform: translateY(3px);
+    transition: all 0.3s ease-in-out;
+  }
+  @media (max-width: 767px) {
+    .basic-pagination ul li > a {
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      font-size: 18px;
+    }
+  }
+  .basic-pagination ul li .current {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #16171a;
+    transition: all 0.3s ease-in-out;
+  }
+  @media (max-width: 767px) {
+    .basic-pagination ul li .current {
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      font-size: 18px;
+    }
+  }
