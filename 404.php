@@ -19,9 +19,11 @@ get_header();
       <div class="row">
          <div class="col-xl-12">
             <div class="tp-error__box text-center">
+
                <div class="tp-error__404">
                   <h1 class="error-404-title"><?php print esc_html($ampere_error_404); ?></h1>
                </div>
+
                <div class="tp-error__text mb-10">
                   <h4 class="tp-error__title"><?php print esc_html($ampere_error_title); ?></h4>
                </div>
